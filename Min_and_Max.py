@@ -1,5 +1,5 @@
 #You are given a 2-D array with dimensions N X M.
-#Your task is to perform the sum tool over axis 0 and then find the product of that result.
+#Your task is to perform the min function over axis 1 and then find the max of that.
 
 
 ###solution###
@@ -18,6 +18,6 @@ for i in range (0,dims[0]):
         numbers.append(int(n))
 
 numbers = np.array(numbers).reshape(dims[0],dims[1])
-numbers = np.sum(numbers, axis = 0)
-numbers = np.prod(numbers)
+numbers = np.min(numbers, axis = 1)
+numbers = np.max(numbers)
 print(numbers)
